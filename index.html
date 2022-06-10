@@ -245,13 +245,14 @@
                             <p> [full stack] [May 2022] </p><br>
                         </div>
                         <ul style="text-align: left; margin-left: 2rem;">
-                            <li>Online-based manufacturer full stack web app.                            </li>
+                            <li>Online-based manufacturer full stack web app. </li>
                             <li>Admin Panel, User Panel, Stripe Payment.</li>
                             <li>Add User Review, Add New Order,Log in facility. </li>
                         </ul>
                         <div class="project-link">
                             <a href="https://manufacturer-web-ff277.web.app/" target="_blank">Live Demo</a>
-                            <a href="https://github.com/JawadJisan/Manufacturer-Website-Client-A12" target="_blank">Source Code</a>
+                            <a href="https://github.com/JawadJisan/Manufacturer-Website-Client-A12"
+                                target="_blank">Source Code</a>
                         </div>
                     </div>
                 </div>
@@ -263,13 +264,14 @@
                             <p> [full stack] [May 2022] </p><br>
                         </div>
                         <ul style="text-align: left; margin-left: 2rem;">
-                            <li>Online-based simple inventory management web app.                            </li>
+                            <li>Online-based simple inventory management web app. </li>
                             <li>Product Add facility, Add New Product. </li>
                             <li>Log in facility.</li>
                         </ul>
                         <div class="project-link">
                             <a href="https://warehouse-client-1a22b.web.app/" target="_blank">Live Demo</a>
-                            <a href="https://github.com/JawadJisan/Warehouse-Management-Client-A11" target="_blank">Source Code</a>
+                            <a href="https://github.com/JawadJisan/Warehouse-Management-Client-A11"
+                                target="_blank">Source Code</a>
                         </div>
                     </div>
                 </div>
@@ -281,17 +283,18 @@
                             <p> [web app.] [April 2022] </p><br>
                         </div>
                         <ul style="text-align: left; margin-left: 2rem;">
-                            <li>Online-based simple inventory management web app.                            </li>
+                            <li>Online-based simple inventory management web app. </li>
                             <li>Product Add facility, Add New Product. </li>
                             <li>Log in facility.</li>
                         </ul>
                         <div class="project-link">
                             <a href="https://personal-service-assignment10.web.app/" target="_blank">Live Demo</a>
-                            <a href="https://github.com/JawadJisan/Independent-Service-Provider-A10" target="_blank">Source Code</a>
+                            <a href="https://github.com/JawadJisan/Independent-Service-Provider-A10"
+                                target="_blank">Source Code</a>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </div>
         </div>
@@ -354,11 +357,11 @@
                             target="_blank"> <i class="fab fa-linkedin"></i> </a>
                         <a title="Jawad Jisan on GitHub" href="https://github.com/JawadJisan" target="_blank"> <i
                                 class="fab fa-github-square"></i> </a>
-                        <a title="Jawad Jisan on Code pen" href="" target="_blank"> <i
-                                class="fab fa-codepen"></i> </a>
-                        
-                        <a title="Jawad Jisan on Facebook" href="https://www.facebook.com/JawadJisan0/" target="_blank"> <i class="fab fa-facebook-square"></i></a>
-                        
+                        <a title="Jawad Jisan on Code pen" href="" target="_blank"> <i class="fab fa-codepen"></i> </a>
+
+                        <a title="Jawad Jisan on Facebook" href="https://www.facebook.com/JawadJisan0/" target="_blank">
+                            <i class="fab fa-facebook-square"></i></a>
+
                     </div>
                     <div class="icons">
                         <div class="row">
@@ -393,13 +396,14 @@
                 </div>
                 <div class="column right">
                     <div class="text">Let me know what you think about me <i class="far fa-smile"></i> </div>
-                    <form class="contact-form" action="#" method="POST">
-                        <div class="fields">
+                    <form class="contact-form"  method="POST" >
+                    <!-- <form class="contact-form" action="https://formsubmit.co/el/huyosi" method="POST" > -->
+                    <div class="fields">
                             <div class="field name">
                                 <input type="text" class="fullname" placeholder="Name">
                             </div>
                             <div class="field email">
-                                <input type="text" class="email-input" placeholder="Email">
+                                <input id="email" type="text" class="email-input" placeholder="Email">
                             </div>
                         </div>
                         <div class="field">
@@ -419,14 +423,31 @@
 
     <!-- footer section start -->
     <footer>
-        <span>Developed By <a href="">@Jawad Ibne Rafiq</a> | <span
-                class="far fa-copyright"></span>
+        <span>Developed By <a href="">@Jawad Ibne Rafiq</a> | <span class="far fa-copyright"></span>
             <script type="text/javascript">var year = new Date(); document.write(year.getFullYear());</script>
             All rights reserved.
         </span>
     </footer>
-
     <script src="script.js"></script>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>    
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "fcommercebd@gmail.com",
+                Password: "",
+                To: 'fcommercebd@gmail.com',
+                From: document.getElementById('email').value,
+                Subject: "Subject from My portfolio",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+
+    </script>
+
 </body>
 
 </html>
